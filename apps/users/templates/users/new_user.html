@@ -1,11 +1,13 @@
 {# formulario para crear un nuevo usuario #}
-{% extends "base/base.html" %}
+{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
 {% load i18n %}
 {% block title %}{% translate "SignUp" %}{% endblock title %}
-{% block content %}
-<form method="post">
+{% block form_title %}{% translate "SignUp" %}{% endblock form_title %}
+{% block auth_form %}
+<form method="POST">
   {% csrf_token %}
-  {{ form.as_p}}
-  <button type="submit">{% translate "SignUp" %}</button>
+  {{ form|crispy }}
+  <button type="submit" class="btn btn-primary">{% translate "SignUp" %}</button>
 </form>
-{% endblock content %}
+{% endblock auth_form %}

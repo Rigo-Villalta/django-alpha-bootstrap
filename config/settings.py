@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'crispy_forms',
     "debug_toolbar",
 ]
 
@@ -98,3 +99,5 @@ LOGIN_REDIRECT_URL = "alpha:home"
 LOCALE_PATHS = (
     'locale',
 )
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

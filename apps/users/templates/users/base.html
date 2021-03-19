@@ -1,0 +1,18 @@
+{# plantilla de ingreso al sistema #}
+{% extends "base/base.html" %}
+{% block navbar %}{% endblock navbar %}
+{% block content %}
+<div class="container my-5">
+  <div class="row">
+    <h3 class="col-12 text-center mb-3">{% block form_title %}{% endblock form_title %}</h3>
+    <div class="col-12 offset-sm-1 col-sm-12 offset-md-2 col-md-8 offset-lg-3 col-lg-6 offset-xl-4 col-xl-4">
+      {% block auth_form %}
+      {% endblock %}
+      <div class="text-center mt-4">
+        <a href="" class="text-secondary">Ayuda</a> - <a href="https://pacamara.dev" target="_blank" class="text-secondary">Pacamara Dev</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+{% block footer %}{% endblock footer %}

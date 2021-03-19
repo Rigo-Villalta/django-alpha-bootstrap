@@ -12,3 +12,4 @@ It includes:
 	- django-debug-toolbar
 	- Separated local setting
 	- Integration with Bootstrap 4
+	- Django Crispy Forms

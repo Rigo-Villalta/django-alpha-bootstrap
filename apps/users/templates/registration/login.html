@@ -1,11 +1,13 @@
 {# plantilla de ingreso al sistema #}
-{% extends "base/base.html" %}
+{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
 {% load i18n %}
 {% block title %}{% translate "Login" %}{% endblock title %}
-{% block content %}
-<form method="post">
+{% block form_title %}{% translate "Login" %}{% endblock form_title %}
+{% block auth_form %}
+<form method="POST">
   {% csrf_token %}
-  {{ form.as_p}}
-  <button type="submit">{% translate "Login" %}</button>
+  {{ form|crispy }}
+  <button type="submit" class="btn btn-primary">{% translate "Login" %}</button>
 </form>
-{% endblock content %}
+{% endblock auth_form %}
