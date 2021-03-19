@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-19 10:05-0600\n"
+"POT-Creation-Date: 2021-03-19 11:10-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,28 +51,37 @@ msgstr "Ese nombre de usuario ya existe."
 msgid "user"
 msgstr "usuario"
 
-#: apps/users/templates/registration/login.html:4
-#: apps/users/templates/registration/login.html:9
+#: apps/users/templates/registration/login.html:5
+#: apps/users/templates/registration/login.html:6
+#: apps/users/templates/registration/login.html:11
 msgid "Login"
 msgstr "Ingresar"
 
-#: apps/users/templates/registration/password_change_form.html:4
-#: apps/users/templates/registration/password_change_form.html:9
+#: apps/users/templates/registration/login.html:12
+msgid "Forgot Password?"
+msgstr "¿Olvidó su contraseña?"
+
+#: apps/users/templates/registration/password_change_form.html:5
+#: apps/users/templates/registration/password_change_form.html:6
+#: apps/users/templates/registration/password_change_form.html:11
 msgid "Change password"
 msgstr "Cambiar contraseña"
 
-#: apps/users/templates/registration/password_reset_confirm.html:4
-#: apps/users/templates/registration/password_reset_confirm.html:9
-#: apps/users/templates/registration/password_reset_form.html:4
-#: apps/users/templates/registration/password_reset_form.html:9
+#: apps/users/templates/registration/password_reset_confirm.html:5
+#: apps/users/templates/registration/password_reset_confirm.html:6
+#: apps/users/templates/registration/password_reset_confirm.html:11
+#: apps/users/templates/registration/password_reset_form.html:5
+#: apps/users/templates/registration/password_reset_form.html:6
+#: apps/users/templates/registration/password_reset_form.html:11
 msgid "Reset password"
 msgstr "Restaurar contraseña"
 
 #: apps/users/templates/registration/password_reset_done.html:4
+#: apps/users/templates/registration/password_reset_done.html:5
 msgid "Check your email"
 msgstr "verifique su correo electrónico"
 
-#: apps/users/templates/registration/password_reset_done.html:6
+#: apps/users/templates/registration/password_reset_done.html:7
 msgid ""
 "If you provided a registered mail you will receive a message with "
 "instructions to recovery your password. If you don't see any message in the "
@@ -113,8 +122,9 @@ msgstr "El equipo de %(site_name)s"
 msgid "Password reset on %(site_name)s"
 msgstr "Recuperación de contraseña en %(site_name)s"
 
-#: apps/users/templates/users/new_user.html:4
-#: apps/users/templates/users/new_user.html:9
+#: apps/users/templates/users/new_user.html:5
+#: apps/users/templates/users/new_user.html:6
+#: apps/users/templates/users/new_user.html:11
 msgid "SignUp"
 msgstr "Registrarse"
 
