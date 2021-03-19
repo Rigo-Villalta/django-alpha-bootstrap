@@ -3,6 +3,10 @@
   {% block title %}{% translate "Home" %}{% endblock title %}
   {% block navbar %}{{ block.super }}{% endblock navbar %}
   {% block content %}
-    <p>{% translate "A fake home site" %}</p>
+  <div class="container mt-4">
+    <div class="row">
+    <p class="col-12">{% translate "Home page." %}</p>
+    </div>
+  </div>
   {% endblock content %}
   {% block footer %}{{ block.super }}{% endblock footer %}

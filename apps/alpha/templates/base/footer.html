@@ -1,4 +1,9 @@
 {# footer del proyecto, incluir un margen en body para que no sobrepase #}
 {% load i18n %}
 
-<p style="position:absolute; bottom: 0;">{% translate "A fake footer - 2020" %}</p>
+<footer class="text-muted bg-light py-3" style="position:absolute; bottom: 0; width: 100vw;;">
+  <div class="container">
+    <p class="mb-1 text-center">{% translate 'Template made by &copy;' %}<a href="https://pacamara.dev">PACAMARA DEV</a> - 2021</p>
+    <p class="text-center">{% translate 'You can used freely used under the' %} <a href="https://opensource.org/licenses/BSD-3-Clause">BSD License</a></p>
+  </div>
+</footer>
