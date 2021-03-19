@@ -1,0 +1,11 @@
+{# formulario para crear un nuevo usuario #}
+{% extends "base/base.html" %}
+{% load i18n %}
+{% block title %}{% translate "SignUp" %}{% endblock title %}
+{% block content %}
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p}}
+  <button type="submit">{% translate "SignUp" %}</button>
+</form>
+{% endblock content %}

@@ -1,0 +1,8 @@
+{% extends "base/base.html" %}
+{% load i18n %}
+  {% block title %}{% translate "Home" %}{% endblock title %}
+  {% block navbar %}{{ block.super }}{% endblock navbar %}
+  {% block content %}
+    <p>{% translate "A fake home site" %}</p>
+  {% endblock content %}
+  {% block footer %}{{ block.super }}{% endblock footer %}

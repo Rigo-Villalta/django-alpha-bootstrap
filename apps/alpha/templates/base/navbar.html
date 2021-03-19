@@ -1,0 +1,5 @@
+{# Aqui el navbar del proyecto #}
+{% load i18n %}
+
+<p>{% translate "A fake nav bar" %} / <a href="{% url 'alpha:home' %}">{% translate "Home" %}</a> </p>
+{% if user.is_authenticated %}<p><a href="{% url 'users:change_password' %}">{% translate "Change Password" %}</a> / <a href="{% url 'users:logout' %}">{% translate "Logout" %}</a></p>{% else %}<p><a href="{% url 'users:login' %}">{% translate "Login" %}</a> / <a href="{% url 'users:form_reset_password' %}">{% translate "Forgot Password?" %}</a> / <a href="{% url 'users:add' %}">{% translate 'SignUp' %}</a></p>{% endif %}

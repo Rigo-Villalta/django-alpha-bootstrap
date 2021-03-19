@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-14 20:27-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/alpha/templates/alpha/home.html:3
+#: apps/alpha/templates/base/navbar.html:4
+msgid "Home"
+msgstr "Inicio"
+
+#: apps/alpha/templates/alpha/home.html:6
+msgid "A fake home site"
+msgstr "Una página de inicio falsa"
+
+#: apps/alpha/templates/base/footer.html:4
+msgid "A fake footer - 2020"
+msgstr "Un pie de página falso - 2020"
+
+#: apps/alpha/templates/base/navbar.html:4
+msgid "A fake nav bar"
+msgstr "Un navbar falso"
+
+#: apps/alpha/templates/base/navbar.html:5
+msgid "Change Password"
+msgstr "Cambiar Contraseña"
+
+#: apps/alpha/templates/base/navbar.html:5
+msgid "Logout"
+msgstr "Salir"
+
+#: apps/alpha/templates/base/navbar.html:5
+msgid "Login"
+msgstr "Ingresar"
+
+#: apps/alpha/templates/base/navbar.html:5
+msgid "Forgot Password?"
+msgstr "¿Olvidó su contraseña?"
+
+#: apps/alpha/templates/base/navbar.html:5
+msgid "SignUp"
+msgstr "Registrarse"
+
+#: apps/alpha/validators.py:14
+msgid "The field only accept letters and digits, blank spaces not allowed."
+msgstr "El campo solo acepta letras sin tildes y dígitos, espacios vacios no son permitidos."

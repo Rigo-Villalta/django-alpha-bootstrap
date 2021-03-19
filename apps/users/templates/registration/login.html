@@ -1,0 +1,11 @@
+{# plantilla de ingreso al sistema #}
+{% extends "base/base.html" %}
+{% load i18n %}
+{% block title %}{% translate "Login" %}{% endblock title %}
+{% block content %}
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p}}
+  <button type="submit">{% translate "Login" %}</button>
+</form>
+{% endblock content %}
