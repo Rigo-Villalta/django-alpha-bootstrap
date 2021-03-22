@@ -1,4 +1,4 @@
-Django Alpha is a simple scaffolding for Django projects with Bootstrap 4.
+Django Alpha Bootstrap is a simple scaffolding for Django projects with Bootstrap 4.
 
 The main goal is don't repeat all initial steps for every django project.
 
