@@ -9,7 +9,8 @@ DATABASES = {
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["95.217.222.90"]
+# para la variable utilizar una cadena con espacios
+ALLOWED_HOSTS = os.environ.get('SERVERNAMES').split(' ')
 
 STATIC_URL = '/static/'
 
