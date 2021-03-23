@@ -1,9 +1,11 @@
-from config.settings.development import ALLOWED_HOSTS, DEBUG
-import os
-
 from .base import *
 
-SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
 
 DEBUG = False
 

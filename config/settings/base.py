@@ -1,15 +1,11 @@
+import os
 import sys
 
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
+SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 
 # Agrego directorio apps a path
 sys.path.append(str(BASE_DIR / "apps"))
@@ -23,7 +19,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'crispy_forms',
+    "crispy_forms",
 ]
 
 MIDDLEWARE = [
@@ -92,8 +88,6 @@ LOGIN_URL = "users:login"
 
 LOGIN_REDIRECT_URL = "alpha:home"
 
-LOCALE_PATHS = (
-    'locale',
-)
+LOCALE_PATHS = ("locale",)
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = "bootstrap4"
