@@ -13,8 +13,6 @@ MIDDLEWARE.insert(0, "debug_toolbar.middleware.DebugToolbarMiddleware")
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 INTERNAL_IPS = [
