@@ -1,0 +1,14 @@
+{% extends 'base/base_simple.html' %}
+{% load i18n %}
+{% block title %}{% translate '500 - Server error' %}{% endblock title %}
+{% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <h1 class="col-12 display-1 text-danger text-center bi bi-lock-fill"></h1>
+    <h5 class="col-12 text-center">{% translate '500 - Server error'  %}</h5>
+    <p class="col-12 text-center">{% translate "A server error has occurred. " %}</p>
+    <p class="col-12 text-center">{% translate 'Try to reload the page and if the problem persists contact your system administrator.' %}</p>
+    <p class="col-12 text-center"><a href="{% url 'alpha:home' %}">{% translate 'Return  home' %}</a></p>
+  </div>
+</div>
+{% endblock content %}

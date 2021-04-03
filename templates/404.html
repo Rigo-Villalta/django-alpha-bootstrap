@@ -1,0 +1,13 @@
+{% extends 'base/base_simple.html' %}
+{% load i18n %}
+{% block title %}{% translate '404 - Page not found' %}{% endblock title %}
+{% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <h1 class="col-12 display-1 text-danger text-center bi bi-emoji-angry"></h1>
+    <h5 class="col-12 text-center">{% translate '404 - Page not found'  %}</h5>
+    <p class="col-12 text-center">{% translate "The page you are looking for doesn't exists." %}</p>
+    <p class="col-12 text-center"><a href="{% url 'alpha:home' %}">{% translate 'Return  home' %}</a></p>
+  </div>
+</div>
+{% endblock content %}
