@@ -1,4 +1,3 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import (
     PasswordChangeView,
     PasswordResetView,
@@ -11,6 +10,7 @@ from django.utils.translation import gettext_lazy as _
 
 from alpha.views import SuperCreateView
 from .forms import UserAddForm
+from .mixins import UserIsStaffMixin
 from .models import User
 
 
@@ -47,7 +47,7 @@ class LinkResetPassword(SuccessMessageMixin, PasswordResetConfirmView):
     success_url = reverse_lazy("users:login")
 
 
-class AddUserView(LoginRequiredMixin, SuperCreateView):
+class AddUserView(UserIsStaffMixin, SuperCreateView):
     """
     Vista para crear un nuevo usuario
     """
