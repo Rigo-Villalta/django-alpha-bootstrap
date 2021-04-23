@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-19 11:10-0600\n"
+"POT-Creation-Date: 2021-04-03 12:39-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,13 +152,13 @@ msgstr "solicitud_restaurar_contrasena_hecha/"
 msgid "add/"
 msgstr "agregar/"
 
-#: apps/users/views.py:22
+#: apps/users/views.py:23
 msgid ""
 "Password successfully updated. Login into the system using your new password."
 msgstr ""
 "Contraseña modificada. Ingrese al sistema utilizando su nueva contraseña."
 
-#: apps/users/views.py:43
+#: apps/users/views.py:44
 msgid ""
 "Your password has been reseted. You can login into the system typing your "
 "new password."
@@ -166,7 +166,7 @@ msgstr ""
 "Su contraseña ha sido modificada. Puede ingresar al sistema utilizando su "
 "nueva contraseña"
 
-#: apps/users/views.py:57
+#: apps/users/views.py:58
 #, python-format
 msgid "User %(username)s successfully created"
 msgstr "El usuario %(username)s ha sido creado."

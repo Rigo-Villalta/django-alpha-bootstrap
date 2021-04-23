@@ -15,7 +15,6 @@
 </head>
 
 <body>
-  {% block navbar %}{% include "base/navbar.html" %}{% endblock navbar %}
 
   {% if messages %}
     {% block messages %}{% include "base/messages.html" %}{% endblock messages %}
@@ -23,7 +22,6 @@
 
   {% block content %}{% endblock content %}
 
-  {% block footer %}{% include "base/footer.html" %}{% endblock footer %}
 
   {# scripts al final de página en este espacio #}
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

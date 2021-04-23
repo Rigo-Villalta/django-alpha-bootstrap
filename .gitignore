@@ -1,6 +1,7 @@
 .vscode
 settings_local.py
 venv
+activate
 *.pyc
 db.sqlite3
 

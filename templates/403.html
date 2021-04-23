@@ -1,0 +1,14 @@
+{% extends 'base/base_simple.html' %}
+{% load i18n %}
+{% block title %}{% translate '403 - Restricted access' %}{% endblock title %}
+{% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <h1 class="col-12 display-1 text-danger text-center bi bi-lock-fill"></h1>
+    <h5 class="col-12 text-center">{% translate '403 - Restricted access'  %}</h5>
+    <p class="col-12 text-center">{% translate "This page has restricted access and you don't have permissions to access." %}</p>
+    <p class="col-12 text-center">{% translate 'If you need access to this page, contact your system administrator.' %}</p>
+    <p class="col-12 text-center"><a href="{% url 'alpha:home' %}">{% translate 'Return  home' %}</a></p>
+  </div>
+</div>
+{% endblock content %}

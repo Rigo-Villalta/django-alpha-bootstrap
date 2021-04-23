@@ -10,6 +10,8 @@ SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 # Agrego directorio apps a path
 sys.path.append(str(BASE_DIR / "apps"))
 
+TEMPLATE_DIR = BASE_DIR / "templates"
+
 INSTALLED_APPS = [
     "alpha.apps.AlphaConfig",
     "users.apps.UsersConfig",
@@ -37,7 +39,7 @@ ROOT_URLCONF = "config.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [TEMPLATE_DIR],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [

@@ -9,7 +9,8 @@ from django.utils.translation import gettext_lazy as _
 
 
 from alpha.views import SuperCreateView
-from .forms import ChangeUserForm, UserAddForm
+from .forms import UserAddForm
+from .mixins import UserIsStaffMixin
 from .models import User
 
 
@@ -46,7 +47,7 @@ class LinkResetPassword(SuccessMessageMixin, PasswordResetConfirmView):
     success_url = reverse_lazy("users:login")
 
 
-class AddUserView(SuperCreateView):
+class AddUserView(UserIsStaffMixin, SuperCreateView):
     """
     Vista para crear un nuevo usuario
     """

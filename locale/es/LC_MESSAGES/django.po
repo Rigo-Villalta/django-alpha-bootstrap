@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-19 11:10-0600\n"
+"POT-Creation-Date: 2021-04-03 12:39-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: config/urls.py:8
+#: config/urls.py:9
 msgid "users/"
 msgstr "usuarios/"
+
+#: templates/403.html:3 templates/403.html:8
+msgid "403 - Restricted access"
+msgstr "403 - Acceso restringido"
+
+#: templates/403.html:9
+msgid ""
+"This page has restricted access and you don't have permissions to access."
+msgstr "Esta página tiene acceso restringido y no posee permisos para acceder a ella."
+
+#: templates/403.html:10
+msgid "If you need access to this page, contact your system administrator."
+msgstr "Si necesita acceder a esta página, contacte al administrador del sitio."
+
+#: templates/403.html:11 templates/404.html:10 templates/500.html:11
+msgid "Return  home"
+msgstr "Regresar al inicio"
+
+#: templates/404.html:3 templates/404.html:8
+msgid "404 - Page not found"
+msgstr "404 - Página no encontrada"
+
+#: templates/404.html:9
+msgid "The page you are looking for doesn't exists."
+msgstr "La página que ha solicitado no existe."
+
+#: templates/500.html:3 templates/500.html:8
+msgid "500 - Server error"
+msgstr "500 - Error del servidor"
+
+#: templates/500.html:9
+msgid "A server error has occurred. "
+msgstr "Ha ocurrido un error con el servidor"
+
+#: templates/500.html:10
+msgid ""
+"Try to reload the page and if the problem persists contact your system "
+"administrator."
+msgstr ""
+"Trate de recargar la página, si el problema persiste, contacte al"
+"administrador del sitio."
