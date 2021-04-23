@@ -17,7 +17,7 @@ It includes:
 
 How to use it:
 Django Alpha Bootstrap is not a reusable Django App, is a scaffolding, so the best way to use it is:
-	- Clone the repository
+	- Fork the repository
 	- Don't migrate, firts review User model in users.models
 	- After you are done with the User model migrate
 	- Now you can overwrite templates
