@@ -12,6 +12,8 @@ sys.path.append(str(BASE_DIR / "apps"))
 
 TEMPLATE_DIR = BASE_DIR / "templates"
 
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
 INSTALLED_APPS = [
     "alpha.apps.AlphaConfig",
     "users.apps.UsersConfig",
