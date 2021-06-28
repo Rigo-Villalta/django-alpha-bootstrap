@@ -15,6 +15,7 @@ It includes:
 	- Separated local setting
 	- Integration with Bootstrap 5
 	- Django Crispy Forms and Crispy Bootstrap 5
+	- Templates for 403, 404 and 500 HTTP errors.
 
 How to use it:
 Django Alpha Bootstrap is not a reusable Django App, is a scaffolding, so the best way to use it is:
@@ -22,7 +23,10 @@ Django Alpha Bootstrap is not a reusable Django App, is a scaffolding, so the be
 	- Delete .git directory
 	- Don't migrate, first review the User model in users.models and customize it as needed.
 	- After you are done with the User model, migrate it.
-	- Now you can overwrite templates
+	- Now you can overwrite templates and start new apps.
 
 In production:
 	- run: python manage.py runserver --setting=config.setting.production
+
+I am a Django developer but I don't consider my self nearly a expert,
+however you can use this project under your on risk using the [BSD License](https://opensource.org/licenses/BSD-3-Clause)
