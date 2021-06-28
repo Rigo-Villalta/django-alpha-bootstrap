@@ -3,7 +3,6 @@ Django Alpha Bootstrap is a simple scaffolding for Django projects with Bootstra
 The main goal is don't repeat all initial steps for every django project.
 
 It includes:
-
     - Support for Django 3.2
 	- An extended Django User with only username, email and password.
 	- Exclusive support for Postgresql
@@ -28,5 +27,5 @@ Django Alpha Bootstrap is not a reusable Django App, is a scaffolding, so the be
 In production:
 	- run: python manage.py runserver --setting=config.setting.production
 
-I am a Django developer but I don't consider my self nearly a expert,
+I am a Django developer but I don't consider my self nearly an expert,
 however you can use this project under your on risk using the [BSD License](https://opensource.org/licenses/BSD-3-Clause)
