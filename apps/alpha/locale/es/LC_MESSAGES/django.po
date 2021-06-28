@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-03 12:39-0600\n"
+"POT-Creation-Date: 2021-06-27 20:47-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: apps/alpha/templates/alpha/home.html:3
-#: apps/alpha/templates/base/navbar.html:11
+#: apps/alpha/templates/base/navbar.html:14
 msgid "Home"
 msgstr "Inicio"
 
@@ -39,23 +39,23 @@ msgstr "Puede ocuparlo libremente bajo la licencia"
 msgid "System message:"
 msgstr "Mensaje del sistema:"
 
-#: apps/alpha/templates/base/navbar.html:13
+#: apps/alpha/templates/base/navbar.html:18
 msgid "Change Password"
 msgstr "Cambiar Contraseña"
 
-#: apps/alpha/templates/base/navbar.html:14
+#: apps/alpha/templates/base/navbar.html:21
 msgid "Logout"
 msgstr "Salir"
 
-#: apps/alpha/templates/base/navbar.html:16
+#: apps/alpha/templates/base/navbar.html:25
 msgid "Login"
 msgstr "Ingresar"
 
-#: apps/alpha/templates/base/navbar.html:17
+#: apps/alpha/templates/base/navbar.html:28
 msgid "Forgot Password?"
 msgstr "¿Olvidó su contraseña?"
 
-#: apps/alpha/templates/base/navbar.html:18
+#: apps/alpha/templates/base/navbar.html:31
 msgid "SignUp"
 msgstr "Registrarse"
 
