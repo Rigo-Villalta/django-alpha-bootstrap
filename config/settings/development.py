@@ -1,16 +1,5 @@
 from .base import *
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ["DB_NAME"],
-        "USER": os.environ["DB_USER"],
-        "PASSWORD": os.environ["DB_USER_PASSWORD"],
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
-    }
-}
-
 INSTALLED_APPS += ["debug_toolbar"]
 
 MIDDLEWARE.insert(0, "debug_toolbar.middleware.DebugToolbarMiddleware")
