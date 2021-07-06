@@ -28,7 +28,7 @@ EMAIL_PORT = 25
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
-DEFAULT_FROM_EMAIL = os.environ.get('DEFAUL_FROM_EMAIL').split(' ')
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL').split(' ')
 
 # Logging para producción con problemas técnicos
 LOGGING = {
