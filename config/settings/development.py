@@ -12,6 +12,17 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ["DB_NAME"],
+        "USER": os.environ["DB_USER"],
+        "PASSWORD": os.environ["DB_USER_PASSWORD"],
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
+    }
+}
+
 DEBUG_TOOLBAR_PANELS = [
     "debug_toolbar.panels.history.HistoryPanel",
     "debug_toolbar.panels.versions.VersionsPanel",

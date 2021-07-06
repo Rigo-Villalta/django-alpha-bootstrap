@@ -9,6 +9,17 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = BASE_DIR / "static"
 
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ["DB_NAME"],
+        "USER": os.environ["DB_USER"],
+        "PASSWORD": os.environ["DB_USER_PASSWORD"],
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
+    }
+}
+
 # Cofiguraciones para correo
 # es necesario instalar mailutils y postfix
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
