@@ -16,7 +16,7 @@ DATABASES = {
         "USER": os.environ["DB_USER"],
         "PASSWORD": os.environ["DB_USER_PASSWORD"],
         "HOST": os.environ["DB_HOST"], # DB_HOST=127.0.0.1 if localhost
-        "PORT": os.environ["DB_HOST"], # DB_PORT=5432 default postgresql
+        "PORT": os.environ["DB_PORT"], # DB_PORT=5432 default postgresql
     }
 }
 
