@@ -4,4 +4,5 @@ venv
 activate
 *.pyc
 db.sqlite3
+log.txt
 

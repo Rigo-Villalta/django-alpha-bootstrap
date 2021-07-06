@@ -18,3 +18,21 @@ EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
 DEFAULT_FROM_EMAIL = 'Soporte Técnico <info@pacamara.dev>'
+
+# Logging para producción con problemas técnicos
+LOGGING = {
+    'version': 1,
+    'handlers': {
+        'file': {
+            'level': 'WARNING',
+            'class': 'logging.FileHandler',
+            'filename': 'log.txt',
+        },
+    },
+    'loggers': {
+        'django.db.backends': {
+            'handlers': ['file'],
+            'level': 'WARNING',
+        },
+    },
+}
