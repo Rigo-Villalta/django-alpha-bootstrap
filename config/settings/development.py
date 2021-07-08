@@ -8,7 +8,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = os.environ.get('SERVERNAMES').split(' ')
 
-
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 INTERNAL_IPS = [
@@ -21,8 +20,8 @@ DATABASES = {
         "NAME": os.environ["DB_NAME"],
         "USER": os.environ["DB_USER"],
         "PASSWORD": os.environ["DB_USER_PASSWORD"],
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
+        "HOST": os.environ["DB_HOST"], # DB_HOST=127.0.0.1 if localhost
+        "PORT": os.environ["DB_PORT"]  # DB_PORT=5432 default postgresql
     }
 }
 
